@@ -623,7 +623,7 @@ KEYS.forEach(k => {
   ZONE[k].addEventListener('click', () => {
     if(!selected){ toast('준비물 목록에서 설치할 장치를 먼저 고르세요.'); return; }
     if(selected === k) install(k);
-    else toast(`그 자리는 ${NAME[k]} 자리입니다. ${TOPIC[selected]} 다른 곳에 설치합니다.`);
+    else toast(`그 자리는 ${NAME[k]} 자리입니다.`);
   });
 });
 stage.addEventListener('contextmenu', e => e.preventDefault());
